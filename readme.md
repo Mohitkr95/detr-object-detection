@@ -6,6 +6,8 @@ This application performs real-time object detection on images and videos using 
 
 The DETR model is a transformer-based object detector that eliminates the need for many hand-designed components like NMS.
 
+![]https://media.geeksforgeeks.org/wp-content/uploads/20200601074141/detr.jpg
+
 ### Architecture
 
 The DETR model follows an encoder-decoder architecture:
