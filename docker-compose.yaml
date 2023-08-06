@@ -1,0 +1,12 @@
+version: '3.0'
+
+services:
+    web:
+        build: .
+        container_name: detr-object-detection
+        # command: "uvicorn app:fastapi_app --reload --workers 1 --host 0.0.0.0 --port 8080 --log-level info --reload-dir temp_data"
+        command: "python3 gunicorn_run.py"
+        volumes:
+            - .:/app
+        ports: 
+            - 8080:8080
